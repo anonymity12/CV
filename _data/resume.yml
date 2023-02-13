@@ -91,7 +91,7 @@ main: #简历主要内容，
     duration: 2020.1 ~ 2020.3
     summary: 利用 Github Issue 作为存储的 Android 新闻 App
     detail:
-      md: _data/demo.md
+      md: _data/zzz_forum
 #     sub: Creator and maintainer.
    #可继续添加更多内容
 
