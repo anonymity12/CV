@@ -78,7 +78,9 @@ main: #简历主要内容，
   content:
   - title: gww（乖娃娃）
     duration: 2022.12 ~ now
-    summary: 使用 SpringBoot, Vue.js, Mybatis, Redis 制作的儿童应用，包含用户系统，任务，打卡，日志，排名等功能 "[link](https://github.com/anonymity12/frontend)"
+    summary: 使用 SpringBoot, Vue.js, Mybatis, Redis 制作的儿童应用，包含用户系统，任务，打卡，日志，排名等功能 
+    detail:
+      md: _data/demo.md
     
   - title: 基于深度学习的单目测距算法
     duration: 2021.12 ~ 2022.12
