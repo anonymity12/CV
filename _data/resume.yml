@@ -77,16 +77,18 @@ main: #简历主要内容，
   name: 项目
   content:
   - title: gww（乖娃娃）
+    href: 'https://github.com/anonymity12/frontend'
     duration: 2022.12 ~ now
-    detail: 使用 SpringBoot, Vue.js, Mybatis, Redis 制作的儿童应用，包含用户系统，任务，打卡，日志，排名等功能，[前端](https://github.com/anonymity12/frontend), [后端](https://github.com/anonymity12/backend)
+    detail: 使用 SpringBoot, Vue.js, Mybatis, Redis 制作的儿童应用，包含用户系统，任务，打卡，日志，排名等功能
     
   - title: 基于深度学习的单目测距算法
     duration: 2021.12 ~ 2022.12
     detail: 基于深度学习YOLO网络darkenet版本，以及物体检测定位算法，通过车辆下边缘测量前方车辆距离，同时加入车宽测距实时修正单点测距，在速度和精度上满足基本要求
 #     sub: 
   - title: zzz forum
+    href: 'https://github.com/bluebird97/zzzfourm'
     duration: 2020.1 ~ 2020.3
-    summary: 利用 Github Issue 作为存储的 Android 新闻 [App](https://github.com/bluebird97/zzzfourm)
+    summary: 利用 Github Issue 作为存储的 Android 新闻 App
 #     detail:
 #       md: _data/demo.md
 #     sub: Creator and maintainer.
@@ -98,8 +100,8 @@ others: #其他列表显示
   name: '其他'
   content: #选择需要的格式
   - 我是一个希望在本期生命里做出有价值的软体的开发者
-  - title: "个人经历"
-    text: "有良好的组织沟通能力及中英文写作能力。曾在大学做过记者社团组长，组织策划毕业季学生访谈活动，吸引400余人。采访过吉林大学第54届运动会，经手稿件30余篇，个人投稿上报4次。曾在台湾逢甲大学以交换生身份完成一学期的学习生活。"
+  - title: "自我评价："
+    text: "保持精进，热爱编程，积极乐观，有良好的组织沟通能力及中英文写作能力。曾在大学做过记者社团组长，组织策划毕业季学生访谈活动，吸引400余人。采访过吉林大学第54届运动会，经手稿件30余篇，个人投稿上报4次。曾在台湾逢甲大学以交换生身份完成一学期的学习生活。"
   - title: "兴趣:"
     items: #单行列表
     - 音乐
