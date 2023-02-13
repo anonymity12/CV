@@ -77,10 +77,8 @@ main: #简历主要内容，
   name: 项目
   content:
   - title: gww（乖娃娃）
-    - text: link
-      href: 'https://github.com/anonymity12/frontend'
     duration: 2022.12 ~ now
-    detail: 使用 SpringBoot, Vue.js, Mybatis, Redis 制作的儿童应用，包含用户系统，任务，打卡，日志，排名等功能
+    summary: 使用 SpringBoot, Vue.js, Mybatis, Redis 制作的儿童应用，包含用户系统，任务，打卡，日志，排名等功能 "[link](https://github.com/anonymity12/frontend)"
     
   - title: 基于深度学习的单目测距算法
     duration: 2021.12 ~ 2022.12
@@ -90,8 +88,8 @@ main: #简历主要内容，
     href: 'https://github.com/bluebird97/zzzfourm'
     duration: 2020.1 ~ 2020.3
     summary: 利用 Github Issue 作为存储的 Android 新闻 App
-#     detail:
-#       md: _data/demo.md
+    detail:
+      md: _data/demo.md
 #     sub: Creator and maintainer.
    #可继续添加更多内容
 
