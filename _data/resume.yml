@@ -4,8 +4,8 @@
 title: "简历"
 lang: "zh" #语言设置 zh表示中文 en 表示英语
 name: "郑荣天"
-jobtitle: "求职意向" #可空不显示
-photo: "assets/img/photo.jpg" #照片可空，不显示
+jobtitle: "" #求职意向可空不显示
+photo: "https://picgorepo.oss-cn-beijing.aliyuncs.com/2023-02-13-10-53-31.png" #照片可空，不显示
 
 #联系方式
 contact: #联系方式连接等3~5行
@@ -31,57 +31,65 @@ main: #简历主要内容，
   name: 教育 #显示名称，空则使用type
   content: #内容基本格式 标题-副标题-日期-详细内容 (都允许空)
   - title: 吉林大学
-    duration: "2014年9月 - 2018年7月"
+    duration: "2014 年 9 月 - 2018 年 7 月"
     sub: 本科
-    detail: 专业或者简短说明
-  - title: Your University
-    duration: Aug 2007 - Jun 2011
-    sub: Ut enim ad minim veniam
-    detail: Master Bachelor of Computer Science & Technology.
+    detail: 通信工程
+  - title: 电子科技大学
+    duration: 2020.9 - 2023.7
+    sub: 硕士
+    detail: 计算机科学与技术
 
 - type: skills
-  # name: "技能"
+  name: "技能"
   content:
   - title: 编程语言
     items: #itmems 可以小块的方式显示
-    - 汉语
-    - 语言2
-    - 语言3
-  - title: Skill Group
-    summary: Consectetur, Adipiscing, Elit
+    - C
+    - Java
+    - Kotlin
+  - title: 技术栈
+    summary: SpringBoot, Android, Linux, Mysql, Redis, Vue.js, MachineLearning
 
 - type: experience
-  name: 经验
+  name: 工作经验
   content:
-  - title: 职位
-    sub: 某某公司
-    duration: "xxxx年xx月 - yyyy年yy月"
+  - title: 网络工程师
+    sub: 锐捷网络
+    duration: "2018.11 - 2019.2"
     tags:
-    - 标签
-    summary: 职务或者工作总结(自动折叠)
-    detail: 同时包含 summary和detail在Chrome，Safari(包括IOS)，Android和新版Firefox等会自动折叠，不支持折叠的浏览器和展开后表现一致
+    - Linux
+    - 交换机
+    - 园区网
+    summary: 可编程交换机
+    detail: 针对园区⽹络纵向虚拟化的解决⽅案,参与需求分析和⽅案设计,进⾏可编程芯片Tofino™交换机群的控制⾯/数据⾯的代码编写,以4台Tofino™设备,P4语言,Python 实现了802.1BR协议
     # open: open
     #可以设置open默认展开
-  - title: Job Title
-    sub: Your 2nd, Inc.  
-    duration: Apr 2013 - Mar 2016
+  - title: Android开发
+    sub: OPPO移动通信  
+    duration: 2019.4- 2019.8
     tags: 
-    - tagname
-    summary: Summary your job or work. (Collapse)
-    detail: Details can be collapsed in Chrome Safari, Firefox, Opera and so on. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    - Android
+    - 短信
+    summary: 短信App维护
+    detail: 跟随ColorOS的迭代,参与团队Scrum敏捷开发,进⾏短信UI的更新：负责短信的主列表,详情界⾯,设置界⾯的重构,移植新控件,并定制短信产品的搜索动画效果。参与沟通NewZealand⼩区⼴播业务⽤户场景,完善业务的逻辑,处理Android6.0后的低电耗模式对后台任务的影响
 
 - type: projects
-  name: Projects
+  name: 项目
   content:
-  - title: 项目名称
-    duration: xxxx年xx月 - yyyy年yy月
-    detail: 项目和工作介绍，项目总结.
-    sub: 维护者
-  - title: Project Name
-    summary: Projects' introduction or summary
-    detail:
-      md: _data/demo.md
-    sub: Creator and maintainer.
+  - title: gww（乖娃娃）
+    duration: 2022.12 ~ now
+    detail: 使用 SpringBoot, Vue.js, Mybatis, Redis 制作的儿童应用，包含用户系统，任务，打卡，日志，排名等功能，[前端](https://github.com/anonymity12/frontend), [后端](https://github.com/anonymity12/backend)
+    
+  - title: 基于深度学习的单目测距算法
+    duration: 2021.12 ~ 2022.12
+    detail: 基于深度学习YOLO网络darkenet版本，以及物体检测定位算法，通过车辆下边缘测量前方车辆距离，同时加入车宽测距实时修正单点测距，在速度和精度上满足基本要求
+#     sub: 
+  - title: zzz forum
+    duration: 2020.1 ~ 2020.3
+    summary: 利用 Github Issue 作为存储的 Android 新闻 [App](https://github.com/bluebird97/zzzfourm)
+#     detail:
+#       md: _data/demo.md
+#     sub: Creator and maintainer.
    #可继续添加更多内容
 
 #others 其他简略内容(列表)
@@ -89,18 +97,18 @@ others: #其他列表显示
 - type: others #ID可以为空
   name: '其他'
   content: #选择需要的格式
-  - 单行文字
-  - title: "加粗:"
-    text: "列表项二"
+  - 我是一个希望在本期生命里做出有价值的软体的开发者
+  - title: "个人经历"
+    text: "有良好的组织沟通能力及中英文写作能力。曾在大学做过记者社团组长，组织策划毕业季学生访谈活动，吸引400余人。采访过吉林大学第54届运动会，经手稿件30余篇，个人投稿上报4次。曾在台湾逢甲大学以交换生身份完成一学期的学习生活。"
   - title: "兴趣:"
     items: #单行列表
-    - 睡觉
-    - 吃饭
+    - 音乐
+    - 健身
     - coding
-  - title: 列表
-    list:
-    - 第一项
-    - 第二项
+#   - title: 列表
+#     list:
+#     - 第一项
+#     - 第二项
 #- type: 
 #  name: '其他'
 #  content: #选择需要的格式
@@ -111,9 +119,9 @@ others: #其他列表显示
 footer: #脚注多组
   print: #打印版markdown或者html
   screen:
-  - text: "简历脚注"
+  - text: "Thx original CV designer"
   #   href: '/'
-  - text: "Made with &hearts; by NewFuture"
+  - text: "NewFuture"
     href: "https://github.com/NewFuture/CV/"
 
 #页面额外js脚本，如xx统计
