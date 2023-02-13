@@ -31,7 +31,7 @@ main: #简历主要内容，
   name: 教育 #显示名称，空则使用type
   content: #内容基本格式 标题-副标题-日期-详细内容 (都允许空)
   - title: 吉林大学
-    duration: "2014 年 9 月 - 2018 年 7 月"
+    duration: 2014.9 - 2018.7
     sub: 本科
     detail: 通信工程
   - title: 电子科技大学
@@ -77,7 +77,8 @@ main: #简历主要内容，
   name: 项目
   content:
   - title: gww（乖娃娃）
-    href: 'https://github.com/anonymity12/frontend'
+    - text: link
+      href: 'https://github.com/anonymity12/frontend'
     duration: 2022.12 ~ now
     detail: 使用 SpringBoot, Vue.js, Mybatis, Redis 制作的儿童应用，包含用户系统，任务，打卡，日志，排名等功能
     
