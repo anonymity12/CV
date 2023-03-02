@@ -30,11 +30,15 @@ main: #简历主要内容，
 - type: education #类别为ID
   name: 教育 #显示名称，空则使用type
   content: #内容基本格式 标题-副标题-日期-详细内容 (都允许空)
-  - title: 吉林大学
+  - title: 吉林大学(长春）
     duration: 2014.9 - 2018.7
     sub: 本科
     detail: 通信工程
-  - title: 电子科技大学
+  - title: 逢甲大学(台湾)
+    duration: 2016.9 - 2017.2
+    sub: 交换生
+    detail: 资讯电机
+  - title: 电子科技大学(成都)
     duration: 2020.9 - 2023.7
     sub: 硕士
     detail: 计算机科学与技术
@@ -44,52 +48,55 @@ main: #简历主要内容，
   content:
   - title: 编程语言
     items: #itmems 可以小块的方式显示
-    - C
-    - Java
-    - Kotlin
+    - Java（熟练）
+    - Python（良好）
+    - C (一般）
+    - Kotlin（探索）
+    - Golang（学习中）
   - title: 技术栈
-    summary: SpringBoot, Android, Linux, Mysql, Redis, Vue.js, MachineLearning
+    summary: Spring, MySQL, Redis, Vue.js, Android, Linux, YOLO, Flask
 
 - type: experience
   name: 工作经验
   content:
-  - title: 网络工程师
+  - title: 网络协议工程师
     sub: 锐捷网络
     duration: "2018.11 - 2019.2"
     tags:
     - Linux
     - 交换机
-    - 园区网
+    - 802.1BR协议
     summary: 可编程交换机
-    detail: 针对园区⽹络纵向虚拟化的解决⽅案,参与需求分析和⽅案设计,进⾏可编程芯片Tofino™交换机群的控制⾯/数据⾯的代码编写,以4台Tofino™设备,P4语言,Python 实现了802.1BR协议
+    detail: 针对园区⽹络纵向虚拟化的解决⽅案，我参与需求分析和⽅案设计，并进⾏可编程芯⽚ Tofino™ 交换机群的控制⾯/数据⾯的代码编写，最终以4台Tofino™ 设备、P4语⾔和Python 实现了802.1BR协议的最小模型。
     # open: open
     #可以设置open默认展开
-  - title: Android开发
-    sub: OPPO移动通信  
-    duration: 2019.4- 2019.8
+  - title: Android开发工程师
+    sub: OPPO
+    duration: 2019.4 - 2019.8
     tags: 
     - Android
-    - 短信
+    - 短信APP
     summary: 短信App维护
-    detail: 跟随ColorOS的迭代,参与团队Scrum敏捷开发,进⾏短信UI的更新：负责短信的主列表,详情界⾯,设置界⾯的重构,移植新控件,并定制短信产品的搜索动画效果。参与沟通NewZealand⼩区⼴播业务⽤户场景,完善业务的逻辑,处理Android6.0后的低电耗模式对后台任务的影响
+    detail: 跟随ColorOS的迭代，我参与团队Scrum敏捷开发，进⾏短信App的更新。我对接上游系统控件组，负责短信的主列表，详情，设置等界面的重构，以适配ColorOS新风格。最终改善了OPPO短信App的搜索框动画效果及设置页面的布局。
+我还参与了新西兰小区广播业务，和产品经理一起完善当地地震通知播报的逻辑，并通过查阅Google文档解决了Android 6.0后的低电耗模式对后台通知任务的影响。
 
 - type: projects
   name: 项目
   content:
   - title: gww（乖娃娃）
     duration: 2022.12 ~ now
-    summary: 使用 SpringBoot, Vue.js, Mybatis, Redis 制作的儿童应用，包含用户系统，任务，打卡，日志，排名等功能 
+    summary: 采用 SpringBoot、Mybatis、SpringMVC、Vue.js、Redis、Android WebView等技术，为家里的大小朋友搭建的一个打卡+论坛软件。我负责前后端代码编写，使用ThreadLocal 配合 Redis及前端Axios组件设计了权限验证系统，也通过Mybatis自定义复杂查询减少了Java代码量。目前有20多人使用，已在Github 开源
     detail:
       md: _data/demo.md
     
-  - title: 基于深度学习的单目测距算法
+  - title: 研究生课题：基于深度学习的单目测距算法
     duration: 2021.12 ~ 2022.12
-    detail: 基于深度学习YOLO网络darkenet版本，以及物体检测定位算法，通过车辆下边缘测量前方车辆距离，同时加入车宽测距实时修正单点测距，在速度和精度上满足基本要求
+    detail: 基于深度学习YOLO网络darkenet版本，以及相机几何算法，通过车辆下边缘测量前方车辆距离
 #     sub: 
   - title: zzz forum
     href: 'https://github.com/bluebird97/zzzfourm'
     duration: 2020.1 ~ 2020.3
-    summary: 利用 Github Issue 作为存储的 Android 新闻 App
+    summary: 在 Android 工作期间的业余项目，是一个利用 Github Issue 作为存储的类新闻 Android App，使用了 Google 的依赖注入框架 dagger 及网络通信库 Retrofit
     detail:
       md: _data/zzz_forum
 #     sub: Creator and maintainer.
@@ -107,7 +114,7 @@ others: #其他列表显示
     items: #单行列表
     - 音乐
     - 健身
-    - coding
+    - Coding
 #   - title: 列表
 #     list:
 #     - 第一项
