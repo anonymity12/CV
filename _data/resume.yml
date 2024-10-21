@@ -14,7 +14,7 @@ contact: #联系方式连接等3~5行
   icon: 'icons/email.svg' #图标 svg文件
 - text: "social account"
   href: 'https://www.xiaohongshu.com/user/profile/5f9eb811000000000101fcb4'
-  icon: 'icons/xiaohongshu.net.svg'
+  icon: 'icons/xiaohongshu2.svg'
 - text: "GitHubID"
   href: 'https://github.com/anonymity12'
   icon: "icons/github.svg"
