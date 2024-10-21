@@ -15,9 +15,9 @@ contact: #联系方式连接等3~5行
 - text: "18088603600"
   href: 'tel:18088603600'
   icon: 'icons/phone.svg'
-- text: "website"
-  href: 'http://anonymity12.github.io'
-  icon: 'icons/web.svg'
+- text: "social account"
+  href: 'https://www.xiaohongshu.com/user/profile/5f9eb811000000000101fcb4'
+  icon: 'icons/xiaohongshu.net.svg'
 - text: "GitHubID"
   href: 'https://github.com/anonymity12'
   icon: "icons/github.svg"
@@ -48,13 +48,12 @@ main: #简历主要内容，
   content:
   - title: 编程语言
     items: #itmems 可以小块的方式显示
-    - Java（熟练）
-    - Python（良好）
+    - Java（良好）
+    - Python（一般）
     - C (一般）
-    - Kotlin（探索）
-    - Golang（学习中）
+    - Golang（良好）
   - title: 技术栈
-    summary: Spring, MySQL, Redis, Vue.js, Android, Linux, YOLO, Flask
+    summary: Spring, MySQL, Redis, Vue.js, Android, Linux, YOLO, Go
 
 - type: experience
   name: 工作经验
@@ -78,6 +77,14 @@ main: #简历主要内容，
     - 短信APP
     summary: 短信App维护
     detail: 跟随ColorOS的迭代，我参与团队Scrum敏捷开发，进⾏短信App的更新。我对接上游系统控件组，负责短信的主列表，详情，设置等界面的重构，以适配ColorOS新风格。最终改善了OPPO短信App的搜索框动画效果及设置页面的布局。我还参与了新西兰小区广播业务，和产品经理一起完善当地地震通知播报的逻辑，并通过查阅Google文档解决了Android 6.0后的低电耗模式对后台通知任务的影响。
+  - title: 存储后端开发工程师
+    sub: 中国电子云
+    duration: 2023.7 - 2024.11
+    tags: 
+    - Golang，GoWeb
+    - 高可用，keepalive，coredns
+    summary: 存储系统高可用网关负载均衡维护
+    detail: 跟随电子云CeaStor的迭代，我参与团队高可用组件的维护，AI存储的插件代码编写。
 
 - type: projects
   name: 项目
