@@ -3,7 +3,7 @@
 
 title: "简历"
 lang: "zh" #语言设置 zh表示中文 en 表示英语
-name: "郑荣天"
+name: "天天Paul"
 jobtitle: "" #求职意向可空不显示
 photo: "https://picgorepo.oss-cn-beijing.aliyuncs.com/2023-02-13-10-53-31.png" #照片可空，不显示
 
@@ -12,9 +12,6 @@ contact: #联系方式连接等3~5行
 - text: "3060326200@qq.com" #文本内容
   href: 'mailto:3060326200@qq.com' #链接，无链接则空  
   icon: 'icons/email.svg' #图标 svg文件
-- text: "18088603600"
-  href: 'tel:18088603600'
-  icon: 'icons/phone.svg'
 - text: "social account"
   href: 'https://www.xiaohongshu.com/user/profile/5f9eb811000000000101fcb4'
   icon: 'icons/xiaohongshu.net.svg'
@@ -84,7 +81,7 @@ main: #简历主要内容，
     - GRPC，GoFrame
     - 高可用，keepalive，coredns
     summary: 存储系统高可用网关负载均衡维护
-    detail: 跟随电子云CeaStor的迭代，我参与团队高可用组件的维护，AI存储的插件代码编写。
+    detail: 跟随电子云CeaStor高性能存储系统的迭代，我参与团队高可用组件的维护，Bug修复，AI存储的插件代码编写。在高可用方面修复发现的系统bug，比如keepalive多播冲突问题
 
 - type: projects
   name: 项目
@@ -97,7 +94,7 @@ main: #简历主要内容，
     
   - title: 研究生课题：基于深度学习的单目测距算法
     duration: 2021.12 ~ 2022.12
-    detail: 基于深度学习YOLO网络darkenet版本，以及相机几何算法，通过车辆下边缘测量前方车辆距离
+    detail: 基于深度学习YOLO网络的C语言版本，叠加计算机视觉相机几何算法，通过车辆下边缘测量前方车辆距离，精度与雷达定位接近
 #     sub: 
   - title: zzz forum
     href: 'https://github.com/bluebird97/zzzfourm'
