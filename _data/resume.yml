@@ -81,7 +81,7 @@ main: #简历主要内容，
     sub: 中国电子云
     duration: 2023.7 - 2024.11
     tags: 
-    - Golang，GoWeb
+    - GRPC，GoFrame
     - 高可用，keepalive，coredns
     summary: 存储系统高可用网关负载均衡维护
     detail: 跟随电子云CeaStor的迭代，我参与团队高可用组件的维护，AI存储的插件代码编写。
