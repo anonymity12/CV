@@ -15,7 +15,7 @@ contact: #联系方式连接等3~5行
 - text: "social account"
   href: 'https://www.xiaohongshu.com/user/profile/5f9eb811000000000101fcb4'
   icon: 'icons/xiaohongshu2.svg'
-- text: "GitHubID"
+- text: "GitHub"
   href: 'https://github.com/anonymity12'
   icon: "icons/github.svg"
   attr: 'target="_blank"' #新标签页打开
@@ -50,7 +50,7 @@ main: #简历主要内容，
     - C (一般）
     - Golang（良好）
   - title: 技术栈
-    summary: Spring, MySQL, Redis, Vue.js, Android, Linux, YOLO, Go
+    summary: Golang, Java, Spring, MySQL, Redis, etcd, Vue.js, Android, Linux, YOLO
 
 - type: experience
   name: 工作经验
@@ -76,25 +76,29 @@ main: #简历主要内容，
     detail: 跟随ColorOS的迭代，我参与团队Scrum敏捷开发，进⾏短信App的更新。我对接上游系统控件组，负责短信的主列表，详情，设置等界面的重构，以适配ColorOS新风格。最终改善了OPPO短信App的搜索框动画效果及设置页面的布局。我还参与了新西兰小区广播业务，和产品经理一起完善当地地震通知播报的逻辑，并通过查阅Google文档解决了Android 6.0后的低电耗模式对后台通知任务的影响。
   - title: 存储后端开发工程师
     sub: 中国电子云
-    duration: 2023.7 - 2024.11
+    duration: 2023.7 - now
     tags: 
-    - GRPC，GoFrame
-    - 高可用，keepalive，coredns
+    - GoFrame, go-chi, watermill, GPRC
+    - 高可用，keepalived，CoreDNS，CTDB
     summary: 存储系统高可用网关负载均衡维护
-    detail: 跟随电子云CeaStor高性能存储系统的迭代，我参与团队高可用组件的维护，Bug修复，AI存储的插件代码编写。在高可用方面修复发现的系统bug，比如keepalive多播冲突问题
+    detail: 跟随电子云CeaStor高性能存储系统的迭代，我参与团队高可用组件（CoreDNS,keepalived,CTDB)的维护，修复发现的系统bug，比如keepalived多播冲突问题。 同时参与AI存储（并行文件系统）的插件代码编写和单元测试(选型go-chi,watermills事件驱动框架，采用ddd领域驱动开发）。
 
 - type: projects
   name: 项目
   content:
+  - title: 高可用组件升级
+    duration: 2024.3 ~ now
+    summary: keepalived组件升级单播：两个集群都是 在使用 keepalived 进行 vrrp 多播模式, 发生了 vrrp broadcast storm, 造成两个集群互相影响, 节点会频繁选 主路由实例, 最后导致 coredns 服务短暂不可用,于是短暂影响对象业务(unknowhost现象)【修改方案】修复: 改为单播 或 使用不同的 多播 virtual route id, 我们代码实现了前者:单播; 另外,也由单独的脚本可实现后者。【修改细节】grpc服务端接受命令行前端的rpc请求，使用bash脚本修改组件配置文件。同时考虑升级场景中，将旧有的多播节点平滑迁移至单播（复用正常流程中的代码）。单节点198内存卡死后，对象IO中断:内存卡死的时候，没有把节点标记为 unhealth ，于是集群在 node198 内存卡死，时断时续的恢复 ，导致了集群震荡；集群震荡时间长的话，则每个节点的有个逻辑是 ：主动drop到 所有的 vip ，这就导致了在健康的节点上也 没有vip 了。 因为健康节点老是被卡死的节点（干扰/类似于攻击），于是 drop all vip了；【修改细节】调整一个配置文件ctdb/config/script.options。CTDB_MONITOR_MEMORY_USAGE=80:95，当内存达到95的阈值后， 就令节点不健康,退出集群；
+    
   - title: gww（乖娃娃）
     duration: 2022.12 ~ now
-    summary: 采用 SpringBoot、Mybatis、SpringMVC、Vue.js、Redis、Android WebView等技术，为家里的大小朋友搭建的一个打卡+论坛软件。我负责前后端代码编写，使用ThreadLocal 配合 Redis及前端Axios组件设计了权限验证系统，也通过Mybatis自定义复杂查询减少了Java代码量。目前有20多人使用，已在Github 开源
+    summary: 采用 SpringBoot、Mybatis、SpringMVC、Vue.js、Redis、Android WebView等技术，为家里的大小朋友搭建的一个打卡+论坛软件。我负责前后端代码编写，使用ThreadLocal 配合 Redis及前端Axios组件设计了权限验证系统，也通过Mybatis自定义复杂查询减少了Java代码量。目前有30+人使用，已在Github 开源
     detail:
       md: _data/demo.md
     
   - title: 研究生课题：基于深度学习的单目测距算法
     duration: 2021.12 ~ 2022.12
-    detail: 基于深度学习YOLO网络的C语言版本，叠加计算机视觉相机几何算法，通过车辆下边缘测量前方车辆距离，精度与雷达定位接近
+    detail: 基于深度学习YOLO网络的C语言版本，叠加计算机视觉相机几何算法，通过车辆下边缘测量前方车辆距离，精度与雷达定位接近（百米误差10米以下）
 #     sub: 
   - title: zzz forum
     href: 'https://github.com/bluebird97/zzzfourm'
