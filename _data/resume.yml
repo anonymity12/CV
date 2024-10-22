@@ -88,7 +88,7 @@ main: #简历主要内容，
   content:
   - title: 高可用组件升级
     duration: 2024.3 ~ now
-    summary: keepalived组件升级单播：两个集群都是 在使用 keepalived 进行 vrrp 多播模式, 发生了 vrrp broadcast storm, 造成两个集群互相影响, 节点会频繁选 主路由实例, 最后导致 coredns 服务短暂不可用,于是短暂影响对象业务(unknowhost现象)【修改方案】修复: 改为单播 或 使用不同的 多播 virtual route id, 我们代码实现了前者:单播; 另外,也由单独的脚本可实现后者。【修改细节】grpc服务端接受命令行前端的rpc请求，使用bash脚本修改组件配置文件。同时考虑升级场景中，将旧有的多播节点平滑迁移至单播（复用正常流程中的代码）。单节点198内存卡死后，对象IO中断:内存卡死的时候，没有把节点标记为 unhealth ，于是集群在 node198 内存卡死，时断时续的恢复 ，导致了集群震荡；集群震荡时间长的话，则每个节点的有个逻辑是 ：主动drop到 所有的 vip ，这就导致了在健康的节点上也 没有vip 了。 因为健康节点老是被卡死的节点（干扰/类似于攻击），于是 drop all vip了；【修改细节】调整一个配置文件ctdb/config/script.options。CTDB_MONITOR_MEMORY_USAGE=80:95，当内存达到95的阈值后， 就令节点不健康,退出集群；
+    detail: keepalived组件升级单播：两个集群都是 在使用 keepalived 进行 vrrp 多播模式, 发生了 vrrp broadcast storm, 造成两个集群互相影响, 节点会频繁选 主路由实例, 最后导致 coredns 服务短暂不可用,于是短暂影响对象业务(unknowhost现象)【修改方案】修复: 改为单播 或 使用不同的 多播 virtual route id, 我们代码实现了前者:单播; 另外,也由单独的脚本可实现后者。【修改细节】grpc服务端接受命令行前端的rpc请求，使用bash脚本修改组件配置文件。同时考虑升级场景中，将旧有的多播节点平滑迁移至单播（复用正常流程中的代码）。单节点198内存卡死后，对象IO中断:内存卡死的时候，没有把节点标记为 unhealth ，于是集群在 node198 内存卡死，时断时续的恢复 ，导致了集群震荡；集群震荡时间长的话，则每个节点的有个逻辑是 ：主动drop到 所有的 vip ，这就导致了在健康的节点上也 没有vip 了。 因为健康节点老是被卡死的节点（干扰/类似于攻击），于是 drop all vip了；【修改细节】调整一个配置文件ctdb/config/script.options。CTDB_MONITOR_MEMORY_USAGE=80:95，当内存达到95的阈值后， 就令节点不健康,退出集群；
     
   - title: gww（乖娃娃）
     duration: 2022.12 ~ now
